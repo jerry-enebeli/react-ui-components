@@ -27,7 +27,6 @@ const Button = (props) => {
       break;
   }
 
-  console.log(props)
   return (
       <button className={buttonType}  {...props} type="button">{props.children}</button>
   );
