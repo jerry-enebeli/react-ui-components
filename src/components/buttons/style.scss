@@ -1,27 +1,67 @@
-@import "../../styles/_colors";
+@import "../../styles/globals.scss";
 
-.button--primary{
+.btn {
   font-size: 12px;
-  width: 5em;
-  height: 2em;
-  border: 0;
+  width: 7em;
+  height: 3em;
+  border: 1px solid $border-grey;
   border-radius: 3px;
-  color: white;
-  background: $primary;
-  &:hover{
-    background: lighten($primary, 10%)
-  }
+  color: grey;
+  background: white;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+    border-color: $primary;
   }
 
-.button--primary{
-font-size: 12px;
-width: 5em;
-height: 2em;
-border: 0;
-border-radius: 3px;
-color: white;
-background: $primary;
-&:hover{
-  background: lighten($primary, 10%)
+  &[disabled]{
+    color: white;
+    background: grey;
+    border: 0;
+    cursor: not-allowed;
+    &:hover {
+      color: white;
+      background: grey;
+    }
+  }
+  
 }
+
+.btn--circle{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+
+.btn--primary {
+  @extend .btn;
+  background: $primary;
+  color: white;
+  border: 0;
+  &:hover {
+    color: white;
+    background: lighten($primary, 10%);
+  }
+}
+
+.btn--danger {
+  @extend .btn;
+  background: $danger;
+  color: white;
+  border: 0;
+  &:hover {
+    color: white;
+    background: lighten($danger, 10%);
+  }
+}
+
+.btn--dashed {
+  @extend .btn;
+  border: 1px dashed $border-grey;
+  &:hover {
+    color: $primary;
+    border-color: $primary;
+  }
 }
