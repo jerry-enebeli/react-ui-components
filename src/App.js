@@ -10,7 +10,7 @@ export default function App() {
         <Button> Default </Button>
         <Button disabled> Disabled </Button>
         <Button type="primary"> Primary </Button>
-        <Button type="danger"> Primary </Button>
+        <Button type="danger"> Danger </Button>
         <Button type="dashed"> Dashed </Button>
         <Button type="dashed" shape="round">A</Button>
         <Button type="primary" shape="round">CR</Button>
