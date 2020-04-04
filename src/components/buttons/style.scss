@@ -1,0 +1,27 @@
+@import "../../styles/_colors";
+
+.button--primary{
+  font-size: 12px;
+  width: 5em;
+  height: 2em;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  background: $primary;
+  &:hover{
+    background: lighten($primary, 10%)
+  }
+  }
+
+.button--primary{
+font-size: 12px;
+width: 5em;
+height: 2em;
+border: 0;
+border-radius: 3px;
+color: white;
+background: $primary;
+&:hover{
+  background: lighten($primary, 10%)
+}
+}
