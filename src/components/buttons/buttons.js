@@ -6,13 +6,13 @@ const Button = (props) => {
 
   switch (props.type) {
     case "primary":
-      buttonType = "btn--primary";
+      buttonType = "btn btn--primary";
       break;
     case "danger":
-      buttonType = "btn--danger";
+      buttonType = "btn btn--danger";
       break;
     case "dashed":
-      buttonType = "btn--dashed";
+      buttonType = "btn btn--dashed";
       break;
     default:
       buttonType = "btn";
