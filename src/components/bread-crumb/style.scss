@@ -1,0 +1,11 @@
+@import "../../styles/globals.scss";
+
+.breadcrumb__item{
+    color: $text-grey;
+    text-decoration: none;
+}
+
+.breadcrumb__separator{
+    color: $text-grey;
+    margin-left: 5px;
+}
