@@ -36,7 +36,6 @@
 
 
 .btn--primary {
-  @extend .btn;
   background: $primary;
   color: white;
   border: 0;
@@ -47,7 +46,6 @@
 }
 
 .btn--danger {
-  @extend .btn;
   background: $danger;
   color: white;
   border: 0;
@@ -58,7 +56,6 @@
 }
 
 .btn--dashed {
-  @extend .btn;
   border: 1px dashed $border-grey;
   &:hover {
     color: $primary;
